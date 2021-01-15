@@ -82,9 +82,31 @@ body {
         transform: scale(0);
     }
 }
-/*  */
+/* wave */
+.anim3 {
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.anim3 > div {
+    background-color: crimson;
+    height: 100%;
+    width: 6px;
+    margin: 0px 2px;
+    animation: wave 2s ease-in-out infinite;
+}
 
 
+@keyframes wave {
+    0%, 40%, 100% {
+        transform: scaleY(.4);
+    }
+    20% {
+        transform: scaleY(1);
+    }
+}
 /*  */
 
 
