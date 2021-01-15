@@ -95,10 +95,20 @@ body {
     height: 100%;
     width: 6px;
     margin: 0px 2px;
-    animation: wave 2s ease-in-out infinite;
+    animation: wave 1.2s ease-in-out infinite;
 }
-
-
+.anim3 .wave2 {
+    animation-delay: -1.1s;
+}
+.anim3 .wave3 {
+    animation-delay: -1s;
+}
+.anim3 .wave4 {
+    animation-delay: -.9s;
+}
+.anim3 .wave5 {
+    animation-delay: -.8s;
+}
 @keyframes wave {
     0%, 40%, 100% {
         transform: scaleY(.4);
