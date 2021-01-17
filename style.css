@@ -199,7 +199,21 @@ body {
     }
 }
 /* Blur loader */
-
+.blur {
+    text-align: center;
+    color: red;
+    animation: blur 1s infinite ease alternate;
+}
+@keyframes blur {
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .3;
+        filter: blur(5px);
+        letter-spacing: 3px;
+    }
+}
 
 /* Spinner loader */
 
