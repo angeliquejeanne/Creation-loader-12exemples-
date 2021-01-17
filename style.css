@@ -446,4 +446,21 @@ body {
         transform: translateX(-31px);
     }
 }
-/*  */
+/* loader rotate square */
+.square {
+    width: 40px;
+    height: 40px;
+    background-color: cyan;
+    animation: square-loader  1.2s ease-in-out infinite;
+}
+@keyframes square-loader {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+    }
+}
