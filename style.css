@@ -395,7 +395,55 @@ body {
         opacity: 0;
     }
 }
-/*  */
-
-
+/* Newton loader */
+.anim11:nth-child(11) {
+    background:snow;
+    width: 100%;
+    height: 100%;
+}
+.box11 {
+    background-color: snow;
+}
+.anim11 {
+    width: 142px;
+    height: 40px;
+    background:snow;
+    filter: contrast(20);
+    position: relative;
+}
+.anim11 .dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 15px;
+    filter: blur(4px);
+    background: black;
+    border-radius: 50%;
+    animation: newton 2.8s infinite;
+}
+.anim11 .dots span {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    filter: blur(4px);
+    background: black;        
+    border-radius: 50%;
+}
+.anim11 .dots {
+    margin: 12px 0px 0px 31px;
+    animation: newtonBis 2.8s infinite;
+}
+@keyframes newton {
+    50% {
+        transform: translateX(96px);
+    }
+}
+@keyframes newtonBis {
+    50% {
+        transform: translateX(-31px);
+    }
+}
 /*  */
