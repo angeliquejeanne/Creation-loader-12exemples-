@@ -288,10 +288,37 @@ body {
         transform: rotate(360deg);
     }
 }
-/*  */
-
-
-/*  */
+/* bouncing loading */
+.anim9 {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bouncing {
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: greenyellow;
+    animation: bouncing .6s infinite alternate;
+}
+.bouncing:nth-child(1) {
+    animation-delay: .2s;
+}
+.bouncing:nth-child(2) {
+    animation-delay: .4s;
+}
+.bouncing:nth-child(3) {
+    animation-delay: .6s;
+}
+@keyframes bouncing {
+    100% {
+        transform: translateY(-30px);
+    }
+}
+/* spinner loader */
 
 
 /*  */
