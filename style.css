@@ -117,9 +117,30 @@ body {
         transform: scaleY(1);
     }
 }
-/*  */
+/* ellipsis */
+.anim4 > div {
+    width: 18px;
+    height: 18px;
+    background-color: darkcyan;
+    border-radius: 50%;
+    display: inline-block;
+    animation: ellipsis .7s infinite ease-in-out alternate;
+}
+.anim4 .ellipsis1 {
+    animation-delay: -.5s;
+}
+.anim4 .ellipsis2 {
+    animation-delay: -.25s;
+}
 
-
+@keyframes ellipsis {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 /*  */
 
 
