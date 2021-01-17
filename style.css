@@ -215,10 +215,30 @@ body {
     }
 }
 
-/* Spinner loader */
-
-
-/*  */
+/* spinning top circle */
+.spinning-circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, lime, magenta);
+    border: 1px solid purple;
+    animation: spinning-circle 2s infinite;
+}
+@keyframes spinning-circle {
+    0% {
+        animation-timing-function: cubic-bezier(.5, 0, 1, .5);
+        transform: rotateY(0deg);
+    }
+    50% {
+        animation-timing-function: cubic-bezier(0, .5, .5, 1);
+        transform: rotateY(1800deg);
+    }
+    100% {
+        animation-timing-function: cubic-bezier(0, .5, .5, 1);
+        transform: rotateY(3600deg);
+    }
+}
+/* trio rings loader */
 
 
 /*  */
